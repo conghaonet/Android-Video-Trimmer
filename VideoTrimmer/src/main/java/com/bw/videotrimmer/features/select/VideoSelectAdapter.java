@@ -53,7 +53,8 @@ public class VideoSelectAdapter extends CursorAdapter {
 
   @Override public void bindView(View view, Context context, final Cursor cursor) {
     final VideoGridViewHolder holder = (VideoGridViewHolder) view.getTag();
-    final String path = cursor.getString(cursor.getColumnIndex(MediaStore.Video.Media.DATA));
+    int columnIndex = cursor.getColumnIndex(MediaStore.Video.Media.DATA);
+    final String path = cursor.getString(columnIndex);
     if (!checkDataValid(cursor)) {
       return;
     }

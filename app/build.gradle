@@ -29,17 +29,11 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+//    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     implementation project(path: ':VideoTrimmer')
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.github.iknow4:android-utils-sdk:1.1.2'
     implementation 'nl.bravobit:android-ffmpeg:1.1.7'
-    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.2'
-    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
     implementation "androidx.core:core-ktx:1.7.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
