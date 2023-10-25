@@ -20,7 +20,7 @@
       android:theme="@style/AppTheme"
       tools:ignore="GoogleAppIndexingWarning, LockedOrientationActivity">
     <activity
-        android:name=".features.select.VideoSelectActivity"
+        android:name="com.bw.videotrimmer.features.select.VideoSelectActivity"
         android:screenOrientation="portrait"
         android:launchMode="singleTop"
         android:exported="true">
@@ -30,10 +30,10 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".features.trim.VideoTrimmerActivity"
+    <activity android:name="com.bw.videotrimmer.features.trim.VideoTrimmerActivity"
         android:screenOrientation="portrait"/>
 
-    <activity android:name=".features.record.VideoRecordActivity"
+    <activity android:name="com.bw.videotrimmer.features.record.VideoRecordActivity"
         android:screenOrientation="portrait"/>
   </application>
 
